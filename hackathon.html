@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device,initial-scale=1.0">
+    <title>Company Portfolio</title>
+    <link rel="stylesheet" href="hackathon.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+                <img src="https://www.pexels.com/photo/black-label-with-white-text-6956318/" alt="Company Logo"> 
+            <ul
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Questionnaire</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row"> 
+                <img src="C:\Users\Rose\Pictures\New folder\pexels-nietjuhart-796602.jpg"> 
+            </div>
+            <h1>Welcome to Our Company</h1>
+            <p>We provide exceptional services to help your business grow and succeed. Our team of experts is dedicated to delivering innovative solutions.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>We build responsive, user-friendly websites tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <h3>App Development</h3>
+                <p>Our mobile app development services ensure your business stays connected with clients.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>We offer strategies to increase your online visibility and drive more traffic to your site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questionnaire Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Client Questionnaire</h2>
+            <form id="questionnaire-form">
+                <label for="name">1. What's your name?</label>
+                <input type="text" id="name" placeholder="Your Name" required><br>
+
+                <label for="company">2. What is your company's name?</label>
+                <input type="text" id="company" placeholder="Company Name" required><br>
+
+                <label for="services">3. Which services are you interested in?</label>
+                <select id="services" required>
+                    <option value="">Select a Service</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                </select><br>
+
+                <label for="experience">4. How would you rate your experience with digital technologies?</label>
+                <input type="range" id="experience" name="experience" min="1" max="5" step="1"><br>
+
+                <label for="feedback">5. What is the most important goal you want to achieve with our services?</label>
+                <textarea id="feedback" placeholder="Your Goal" required></textarea><br>
+
+                <label>6. What is your preferred method of communication?</label><br>
+                <input type="radio" id="email" name="communication" value="Email" required>
+                <label for="email">Email</label><br>
+                <input type="radio" id="phone" name="communication" value="Phone" required>
+                <label for="phone">Phone</label><br>
+
+                <label for="newsletter">7. Would you like to receive our newsletter?</label>
+                <input type="checkbox" id="newsletter" name="newsletter"><br>
+
+                <button type="submit">Submit Questionnaire</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Company Name | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
